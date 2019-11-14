@@ -52,7 +52,6 @@ public class MainController {
 
     @ExceptionHandler({NotAuthorizedException.class, NotAuthenticatedException.class})
     public String handleNotAuthenticated(Exception e){
-        System.out.println(e.getMessage());
         return "redirect:/login";
     }
 

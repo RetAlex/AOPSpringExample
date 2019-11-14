@@ -13,5 +13,5 @@ public @interface HasRole {
     Roles role() default Roles.USER;
 
     @AliasFor(value = "role")
-    Roles value();
+    Roles value() default Roles.USER;
 }
